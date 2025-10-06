@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: sans-serif;
+            background-color: #1c1c1c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #ccc;
+        }
+
+        .profile-card {
+            width: 350px;
+            background-color: #333;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile-picture {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background-color: #666;
+            margin: 0 auto 20px;
+        }
+
+        .profile-card h2 {
+            margin-bottom: 5px;
+            color: white;
+        }
+        
+        .profile-card p {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 25px;
+        }
+
+        .button-container a {
+            text-decoration: none;
+            color: white;
+            background-color: #4c68ff;
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin: 0 8px;
+            transition: background-color 0.3s, opacity 0.3s;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .button-container a:hover {
+            background-color: #3853e0;
+            opacity: 0.9;
+        }
+
+        
+        @media (max-width: 640px) {
+            .profile-card {
+                width: 70vw;
+                padding: 20px;
+            }
+
+            .button-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .button-container a {
+                width: 90%;
+                display: block;
+                margin: 8px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <div class="profile-picture"></div>
+        
+        <h2>Bhavy Bhati</h2>
+        <p>Web Designer & Javascript Enthusiast. creative layouts and good coffee!</p>
+
+        <div class="button-container">
+            <a href="#">Contact</a>
+            <a href="@">Portfolio</a>
+        </div>
+    </div>
+
+</body>
+</html>
